@@ -1,4 +1,4 @@
-package advancedAlgo;
+package graphAlgo.advancedAlgo;
 
 import java.util.Stack;
 

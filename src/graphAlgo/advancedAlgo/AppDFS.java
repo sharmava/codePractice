@@ -1,4 +1,4 @@
-package advancedAlgo;
+package graphAlgo.advancedAlgo;
 
 public class AppDFS {
 	 public static void main(String[] args){

@@ -1,4 +1,4 @@
-package advancedAlgo.topologicalOrdering;
+package graphAlgo.advancedAlgo.topologicalOrdering;
 
 import java.util.ArrayList;
 import java.util.List;
