@@ -1,25 +1,22 @@
 package stringProblems;
 
 public class ReverseStringBasic {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-       System.out.println(reverseString("Varun"));
+   
+	public static void main(String[] args){
+		String input = "Varun Sharma";
+		System.out.println("Input :"+input+ "  Reverse :"+reverseString(input));
 	}
-	
+
 	public static String reverseString(String input){
-		if(input != null && input.length() > 1){
-		char[] inputArray = input.toCharArray();
-		int length = inputArray.length;
-		for(int i=0;i<length/2;i++){
-	     char temp = inputArray[i];
-	     inputArray[i] = inputArray[length - i - 1];
-	     inputArray[length - i - 1] = temp;
+		if(input != null){
+			char[] arr = input.toCharArray();
+			for(int x=0;x<arr.length/2;x++){
+				char temp = arr[x];
+				arr[x] = arr[arr.length - x -1];
+				arr[arr.length - x -1] = temp;
+			}
+			input = new String(arr);
 		}
-		 return new String(inputArray);
-		}else{
-		 return input;
-		}
+		return input;
 	}
-
 }
